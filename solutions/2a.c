@@ -35,7 +35,7 @@ int main()
     int next_element = 0;
     int sum = 0;
 
-    while (next_element < limit)
+    while (next_element <= limit)
     {
         next_element = fibo_sequence.array[fibo_sequence.used - 1] + fibo_sequence.array[fibo_sequence.used -2];
         insert(&fibo_sequence, next_element);
