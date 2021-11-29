@@ -12,17 +12,17 @@ int main()
 
 {
     int limit = 4 * pow(10, 6);
-    int last = 2;
-    int penultimate = 1;
+    int last_element = 2;
+    int penultimate_element = 1;
     int next_element = 0;
     int sum = 2;
 
 
-    while (next_element <= 4000000)
+    while (next_element <= limit)
     {
-        next_element = last + penultimate;
-        penultimate = last;
-        last = next_element;
+        next_element = last_element + penultimate_element;
+        penultimate_element = last_element;
+        last_element = next_element;
 
         if (next_element % 2 == 0)
         {
