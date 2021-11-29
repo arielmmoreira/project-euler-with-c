@@ -23,7 +23,6 @@ void resize(Array *array);
 void free_array(Array *array);
 
 int main()
-
 {
     Array fibo_sequence;
     initialize_array(&fibo_sequence, 2);
