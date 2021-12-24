@@ -39,7 +39,7 @@ int main()
     int index = 0;
     int number;
 
-    for (int i = 0; i < 5100; i++)
+    for (int i = 0; i < file_size; i++)
     {
         if (isdigit(input[i]) > 0)
         {
